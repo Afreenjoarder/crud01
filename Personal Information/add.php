@@ -6,10 +6,12 @@ $name = $_POST['name'];
 $fatherName= $_POST['fatherName'];
 $motherName = $_POST['motherName'];
 $Religion  = $_POST['Religion'];
-/*$Date_of_Birth   = $_POST['Date_of_Birth'];
+$Date_of_Birth   = $_POST['Date_of_Birth'];
 $Gender   = $_POST['Gender'];
+
 $Nationality = $_POST['Nationality'];
-$nationalID  = $_POST['nationalID'];*****///
+
+$nationalID  = $_POST['nationalID'];
 
 $link = mysqli_connect("localhost",
     "root",
@@ -29,13 +31,15 @@ $query = "INSERT INTO `ftfl_db`.`personal_info` (`ID` ,
 `Religion` ,
 
 `Date_of_Birth` ,
-/*
+
 `Gender` ,
+
 `Nationality` ,
+
 `National_ID`**/
 )VALUES (
 
-'', '$name''$fatherName', '$motherName','$Religion','$Date_of_Birth',);";
+'', '$name''$fatherName', '$motherName','$Religion','$Date_of_Birth', '$Gender','$Nationality','$nationalID' );";
 
 
 mysqli_query($link, $query);

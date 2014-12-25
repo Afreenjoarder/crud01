@@ -32,7 +32,20 @@ $row = mysqli_fetch_assoc($result);
     <br>
     <label style="color: olive">Date of Birth:</label>
     <input type="text" name="Date_of_Birth" value="<?php echo $row['Date_of_Birth'];?>" /><br>
+
     <br>
 
+    <label style="color: olive">Gender:</label>
+    <input type="text" name="Gender"  value="<?php echo $row['Gender'];?>"/><br>
+    <br>
+
+
+    <label style="color: olive">Nationality:</label>
+    <input type="text" name="Nationality" value="<?php echo $row['Nationality'];?>"/><br>
+    <br>
+
+    <label style="color: olive">National ID:</label>
+    <input type="text" name="nationalID" value="<?php echo $row['National_ID'];?>" /><br>
+    <br><br>
     <button type="submit">Update</button>
 </form>

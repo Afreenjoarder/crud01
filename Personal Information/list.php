@@ -28,9 +28,11 @@ $result = mysqli_query($link, $query);
         <td>Religion</td>
 
         <td>Date of Birth</td>
-        <!--
+
         <td>Gender</td>
+
         <td>Nationality</td>
+
         <td>National ID</td>-->
     </tr>
 
@@ -50,6 +52,10 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['mother_Name']?></td>
             <td><?php echo $row['Religion']?></td>
             <td><?php echo $row['Date_of_Birth']?></td>
+            <td><?php echo $row['Gender']?></td>
+            <td><?php echo $row['Nationality']?></td>
+            <td><?php echo $row['National_ID']?></td>
+
             <td>
                 <a href="view.php?ID=<?php echo $row['ID']?>">View</a> |
                 <a href="edit.php?ID=<?php echo $row['ID']?>">Edit</a> |
