@@ -12,7 +12,7 @@ $result = mysqli_query($link, $query);
 
 <ul>
     <li><a href="#">Download as XL</a></li>
-    <li><a href="#">Download as PDF</a></li>
+    <li><a href="https://github.com/Afreenjoarder/crud01">Go to github</a></li>
     <li><a href="create_form.html">Create New</a></li>
 </ul>
 
@@ -103,7 +103,7 @@ $result = mysqli_query($link, $query);
 
             <td>
                 <a href="view.php?ID=<?php echo $row['ID']?>">View</a> |
-                <a href=" ">Edit</a> |
+                <a href="edit.php?ID=<?php echo $row['ID']?> ">Edit</a> |
 
                 <a href="delete.php?ID=<?php echo $row['ID']?>">Delete</a> |
 
