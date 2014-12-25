@@ -1,7 +1,38 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: shimu
- * Date: 12/25/14
- * Time: 11:56 PM
- */
+$ID = $_GET['ID'];
+$link = mysqli_connect("localhost",
+    "root",
+    "shimuafrin",
+    "ftfl_db");
+
+$query = "select * from `personal_info` WHERE `ID` = $ID";
+
+$result = mysqli_query($link, $query);
+
+
+$row = mysqli_fetch_assoc($result);
+?>
+
+<form action="update.php" method="post">
+
+    <input type="hidden" name="ID" value="<?php echo $row['ID'];?>"
+    <br><br>
+    <label style="color: olive">Name:</label>
+    <input type="text" name="name" value="<?php echo $row['name'];?>" /><br>
+    <br>
+
+    <label style="color: olive" >Father's Name:</label>
+    <input type="text" name="fatherName" value="<?php echo $row['father_Name'];?>" /><br>
+    <br>
+    <label style="color: olive">Mother's Name:</label>
+    <input type="text" name="motherName"  value="<?php echo $row['mother_Name'];?>"/><br>
+    <br>
+    <label style="color: olive">Religion:</label>
+    <input type="text" name="Religion" value="<?php echo $row['Religion'];?>" /><br>
+    <br>
+    <label style="color: olive">Date of Birth:</label>
+    <input type="text" name="Date_of_Birth" value="<?php echo $row['Date_of_Birth'];?>" /><br>
+    <br>
+
+    <button type="submit">Update</button>
+</form>

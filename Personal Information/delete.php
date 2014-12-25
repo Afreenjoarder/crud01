@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: shimu
- * Date: 12/25/14
- * Time: 11:54 PM
- */
+$ID= $_GET['ID'];
+
+$link = mysqli_connect("localhost",
+    "root",
+    "shimuafrin",
+    "ftfl_db");
+
+$query ="DELETE FROM `ftfl_db` . `personal_info` WHERE `personal_info` . `ID`=$ID";
+
+mysqli_query($link, $query);
+
+header('location:list.php');
+?>
