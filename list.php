@@ -114,8 +114,6 @@ $result = mysqli_query($link, $query);
     <?php
     }
 
-
-
     ?>
 
 </table>

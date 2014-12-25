@@ -84,7 +84,6 @@ $query = "INSERT INTO `std_form`.`Form` (
 VALUES (
  '$name', '$fatherName', '$motherName', '$Religion', '$Date_of_Birth', '$Gender', '$Nationality', '$nationalID', '$presentAddress', '$permanentAddress', '$District', '$Mobile', '$Email', '$preferredTrack', '$sscRoll', '$sscBoard', '$hscRoll', '$hscBoard', '$preferred_exam_center',  '$last_level_of_education', '$examTitle', '$group_sub', '$Institution', '$Result', '$passingYear', '$experienceCategory', '$skillDescription', '$extracurricularActivities', '$referenceName', '$Organization', '$Address', '$mobileNo', '$emailId', '$Relation'
 );";
-
 mysqli_query($link, $query);
 echo $query;
 
