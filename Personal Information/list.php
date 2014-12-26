@@ -2,7 +2,7 @@
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimuafrin",
+    "mysql123",
     "ftfl_db");
 
 $query = "SELECT * FROM `personal_info`";
@@ -33,7 +33,7 @@ $result = mysqli_query($link, $query);
 
         <td>Nationality</td>
 
-        <td>National ID</td>-->
+        <td>National ID</td>
     </tr>
 
     <?php

@@ -12,7 +12,7 @@ $nationalID  = $_POST['nationalID'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimuafrin",
+    "mysql123",
     "ftfl_db");
 
 
@@ -26,6 +26,6 @@ $query = "UPDATE `ftfl_db`.`personal_info` SET `name` = '" .$name ."',`father_Na
 
 mysqli_query($link, $query);
 echo $query;
-header('location:list_contact.php');
+header('location:list.php');
 
 ?>

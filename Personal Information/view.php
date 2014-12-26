@@ -5,7 +5,7 @@ $ID= $_GET['ID'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimuafrin",
+    "mysql123",
     "ftfl_db");
 
 $query = "SELECT * FROM `personal_info` WHERE `personal_info` . `ID`=$ID ";

@@ -15,15 +15,15 @@ $nationalID  = $_POST['nationalID'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimuafrin",
+    "mysql123",
     "ftfl_db");
 
 
 
-$query = "INSERT INTO `ftfl_db`.`personal_info` (`ID` ,
+$query = "INSERT INTO `ftfl_db`.`personal_info` (
 
 
-`name`
+`name`,
 `father_Name` ,
 
 `mother_Name` ,
@@ -36,10 +36,10 @@ $query = "INSERT INTO `ftfl_db`.`personal_info` (`ID` ,
 
 `Nationality` ,
 
-`National_ID`**/
+`National_ID`
 )VALUES (
 
-'', '$name''$fatherName', '$motherName','$Religion','$Date_of_Birth', '$Gender','$Nationality','$nationalID' );";
+ '$name','$fatherName', '$motherName','$Religion','$Date_of_Birth', '$Gender','$Nationality','$nationalID' );";
 
 
 mysqli_query($link, $query);
@@ -47,5 +47,5 @@ echo $query;
 
 
 
-header('location:list_contact.php');
+header('location:list.php');
 ?>

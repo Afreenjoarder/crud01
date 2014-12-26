@@ -2,7 +2,7 @@
 $ID = $_GET['ID'];
 $link = mysqli_connect("localhost",
     "root",
-    "shimuafrin",
+    "mysql123",
     "ftfl_db");
 
 $query = "select * from `personal_info` WHERE `ID` = $ID";
@@ -11,7 +11,9 @@ $result = mysqli_query($link, $query);
 
 
 $row = mysqli_fetch_assoc($result);
+var_dump($row['Gender']);
 ?>
+
 
 <form action="update.php" method="post">
     <h1 style="color: cadetblue" align="center" >Personal Information</h1>
@@ -37,8 +39,8 @@ $row = mysqli_fetch_assoc($result);
     <br>
 
     <label style="color: olive">Gender:</label>
-    <input type="text" name="Gender"  value="<?php echo $row['Gender'];?>"/><br>
-    <br>
+    <input type="radio" name="Gender" <?php  if($row['Gender']=="Male")  echo 'checked';?> value ="Male" />Male
+    <input type="radio" name="Gender" <?php  if($row['Gender']=="Female")  echo 'checked';?> value ="Female" />Female
 
 
     <label style="color: olive">Nationality:</label>
