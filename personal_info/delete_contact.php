@@ -3,13 +3,12 @@ $ID= $_GET['ID'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "lict@2",
-    "std_form");
+    "mysql123",
+    "ftfl_db");
 
-$query ="DELETE FROM `std_form` . `Form` WHERE `Form` . `ID`=$ID";
+$query ="DELETE FROM `ftfl_db` . `contact_info` WHERE `contact_info` . `ID`=$ID";
 
 mysqli_query($link, $query);
-
 
 header('location:list_contact.php');
 ?>

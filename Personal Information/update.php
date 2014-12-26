@@ -26,6 +26,6 @@ $query = "UPDATE `ftfl_db`.`personal_info` SET `name` = '" .$name ."',`father_Na
 
 mysqli_query($link, $query);
 echo $query;
-header('location:list.php');
+header('location:list_contact.php');
 
 ?>

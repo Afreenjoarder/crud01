@@ -14,6 +14,7 @@ $row = mysqli_fetch_assoc($result);
 ?>
 
 <form action="update.php" method="post">
+    <h1 style="color: cadetblue" align="center" >Personal Information</h1>
 
     <input type="hidden" name="ID" value="<?php echo $row['ID'];?>"
     <br><br>

@@ -47,5 +47,5 @@ echo $query;
 
 
 
-header('location:list.php');
+header('location:list_contact.php');
 ?>

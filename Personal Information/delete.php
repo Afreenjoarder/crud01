@@ -10,5 +10,5 @@ $query ="DELETE FROM `ftfl_db` . `personal_info` WHERE `personal_info` . `ID`=$I
 
 mysqli_query($link, $query);
 
-header('location:list.php');
+header('location:list_contact.php');
 ?>
