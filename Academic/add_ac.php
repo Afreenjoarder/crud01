@@ -3,14 +3,14 @@
 $level_of_education   = $_POST['level_of_education'];
 $examTitle   = $_POST['examTitle'];
 $group_sub  = $_POST['group_sub'];
-$Institution   = $_POST['Institution'];
-$Resulttype = $_POST['Resulttype'];
+$Institution   = $_POST['institution'];
+$Resulttype = $_POST['result_type'];
 
-$Result   = $_POST['Result'];
-$Scale = $_POST['Scale'];
+$Result   = $_POST['result'];
+$Scale = $_POST['scale'];
 $passingYear   = $_POST['passingYear'];
-$Duration = $_POST['Duration'];
-$Achievement =$_POST['Achievement'];
+$Duration = $_POST['duration'];
+$Achievement =$_POST['achievement'];
 
 $link = mysqli_connect("localhost",
     "root",

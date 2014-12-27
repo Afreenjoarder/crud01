@@ -13,7 +13,7 @@ $result = mysqli_query($link, $query);
     <ul>
         <li><a href="#">Download as XL</a></li>
         <li><a href="https://github.com/Afreenjoarder">Go to Github</a></li>
-        <li><a href="create_form.html">Create New</a></li>
+        <li><a href="#">Create New</a></li>
     </ul>
 
 <table border="1" width="70%">

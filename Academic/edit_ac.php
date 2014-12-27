@@ -21,14 +21,9 @@ $row = mysqli_fetch_assoc($result);
     <br><br>
 
     <label>Level of Education :</label>
+    <input type="text" name="level_of_education" value="<?php echo $row['Level_of_education'];?>" /><br>
 
-    <select name ="level_of_education">
 
-        <option <?php if ($row['level_of_education']=="Diploma") echo 'selected';?> value ="Diploma"> Diploma</option>
-        <option <?php if ($row['level_of_education']=="Bachelor/Honors") echo 'selected';?> value ="Bachelor/Honors"> Bachelor/Honors</option>
-        <option <?php if ($row['level_of_education']=="Masters") echo 'selected';?> value ="Masters"> Masters</option>
-
-    </select>
 
 
 
@@ -39,7 +34,7 @@ $row = mysqli_fetch_assoc($result);
     <br><br>
 
     <label>Group/Subject:</label>
-    <input type="text" name="Group_sub" value="<?php echo $row['Group_sub'];?>" /><br>
+    <input type="text" name="group_sub"" value="<?php echo $row['Group_sub'];?>" /><br>
 
 
     <br><br>

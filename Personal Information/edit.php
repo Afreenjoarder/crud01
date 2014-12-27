@@ -11,7 +11,7 @@ $result = mysqli_query($link, $query);
 
 
 $row = mysqli_fetch_assoc($result);
-var_dump($row['Gender']);
+
 ?>
 
 
@@ -39,8 +39,8 @@ var_dump($row['Gender']);
     <br>
 
     <label style="color: olive">Gender:</label>
-    <input type="radio" name="Gender" <?php  if($row['Gender']=="Male")  echo 'checked';?> value ="Male" />Male
-    <input type="radio" name="Gender" <?php  if($row['Gender']=="Female")  echo 'checked';?> value ="Female" />Female
+    <input type="text" name="Gender" value="<?php echo $row['Gender'];?>" /><br>
+
 
 
     <label style="color: olive">Nationality:</label>
